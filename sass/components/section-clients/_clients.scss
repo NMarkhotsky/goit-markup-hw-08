@@ -1,16 +1,24 @@
-.clients__title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
 .clients__list {
   @extend %list;
 
   display: flex;
+  flex-wrap: wrap;
+  // width: 100%;
   gap: 30px;
+}
+
+.clients__item {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 15px) / 2);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
 }
 
 .clients__link {
@@ -19,7 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
 
   border-radius: 4px;

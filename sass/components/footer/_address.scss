@@ -1,16 +1,28 @@
 .address-box {
-  margin-right: 70px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .address__list {
   @extend %list;
 
+  margin-bottom: 60px;
+
   font-style: normal;
   line-height: 1.71;
 }
 
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .address__link {

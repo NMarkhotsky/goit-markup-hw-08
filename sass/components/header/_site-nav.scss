@@ -1,12 +1,14 @@
 .site-nav {
-  display: flex;
+  // display: flex;
+  
 }
 
 .site-nav__list {
+  display: none;
   @extend %list;
 
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-left: 93px;
 
   font-weight: 500;

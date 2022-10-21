@@ -1,19 +1,44 @@
 .features {
-  padding-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .features__list {
   @extend %list;
 
-  display: flex;
-  gap: 30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+
+.features__item {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 15px) / 2);
+  }
 }
 
 .features__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
 
@@ -28,6 +53,10 @@
 
   font-size: 14px;
   line-height: 1.14;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__text {
