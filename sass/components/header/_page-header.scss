@@ -1,7 +1,10 @@
 .page-header {
+  // position: relative;
+
   border-bottom: 1px solid #ececec;
 }
 
 .page-header__box {
-  // display: flex;
+  display: flex;
+  align-items: center;
 }
