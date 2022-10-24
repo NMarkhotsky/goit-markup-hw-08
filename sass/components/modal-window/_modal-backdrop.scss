@@ -2,9 +2,15 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  padding: 15px;
+
+  z-index: 998;
 
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -19,5 +25,11 @@
 
   & .modal {
     transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  @media screen and (max-width: 1199px) {
+    & .modal {
+      transform: scale(1.2);
+    }
   }
 }

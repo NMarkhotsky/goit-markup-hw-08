@@ -49,11 +49,6 @@
     color: $accent-color;
   }
 
-  // @media screen and (max-width: 767px) {
-  //   display: block;
-  //   text-align: start;
-  // }
-
   @media screen and (min-width: $tablet) {
     position: relative;
     padding-top: 32px;

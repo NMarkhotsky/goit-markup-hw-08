@@ -6,8 +6,12 @@
   margin-bottom: 12px;
 
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__field {
@@ -65,15 +69,22 @@
   height: 120px;
   padding: 12px 16px;
 
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .form-checkbox {
-  position: relative;
+  // position: relative;
 
   display: flex;
   justify-content: center;
@@ -82,14 +93,20 @@
 }
 
 .form-checkbox__label {
-  position: relative;
+  // position: relative;
 
   display: flex;
   align-items: center;
 
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
 
   color: $primary-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-checkbox__input {
@@ -102,20 +119,24 @@
 }
 
 .form-checkbox__span {
-  width: 16px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
   height: 15px;
   margin-right: 7px;
 
   border-radius: 2px;
   border: 2px solid $main-color;
   background-color: $secondary-color;
-
+  
   transition: background-color $animation-duration $animation-function;
 }
 
-.form-checkbox__icon {
-  position: absolute;
-}
+// .form-checkbox__icon {
+//   position: absolute;
+// }
 
 .form-checkbox__link {
   margin-left: 4px;

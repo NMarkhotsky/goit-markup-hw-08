@@ -4,15 +4,12 @@
   display: inline-flex;
   gap: 10px;
 
-  
-
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
 .social-header__item {
-
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

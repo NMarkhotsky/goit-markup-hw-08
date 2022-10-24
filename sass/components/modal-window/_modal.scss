@@ -1,11 +1,15 @@
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+// Mobile&Tablet
+// width: 450px
+// height: 609px
+// Mobile&Tablet input
+// 370x40
 
-  width: 528px;
-  height: 581px;
+.modal {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -13,6 +17,22 @@
   background-color: $main-bgd-color;
 
   transition: transform $animation-duration $animation-function;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+
+    transform: scale(1);
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__btn {
