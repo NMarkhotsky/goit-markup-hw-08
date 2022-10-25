@@ -10,9 +10,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
   }
 }
 
