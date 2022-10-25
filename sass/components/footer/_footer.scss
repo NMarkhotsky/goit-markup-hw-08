@@ -6,9 +6,7 @@
 }
 
 .footer-box {
-  @media screen and (max-width: 1199px) {
-    text-align: center;
-  }
+  text-align: center;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -17,7 +15,9 @@
     justify-content: space-around;
   }
 
-  @media screen and (min-width:$desktop) {
-     justify-content: stretch;
+  @media screen and (min-width: $desktop) {
+    justify-content: stretch;
+
+    text-align: left;
   }
 }

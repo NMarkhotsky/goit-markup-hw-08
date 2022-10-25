@@ -1069,10 +1069,8 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 1199px) {
-  .footer-box {
-    text-align: center;
-  }
+.footer-box {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer-box {
@@ -1093,6 +1091,7 @@ img {
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
+    text-align: left;
   }
 }
 
