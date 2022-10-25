@@ -1,12 +1,14 @@
 .footer-form {
-  // display: flex;
-  align-items: flex-end;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
-// .footer-form__box {
-//   display: flex;
-//   flex-direction: column;
-// }
+.footer-form__box {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-form__label {
   display: inline-block;
@@ -43,13 +45,22 @@
     outline: 1px solid $accent-color;
     border: 1px solid $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-form__btn {
   display: inline-flex;
   align-items: center;
   padding: 10px 30px;
-
 
   font-weight: 700;
   font-size: 16px;

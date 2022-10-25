@@ -1,4 +1,8 @@
 .address-box {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
   }
@@ -6,8 +10,6 @@
 
 .address__list {
   @extend %list;
-
-  margin-bottom: 60px;
 
   font-style: normal;
   line-height: 1.71;
