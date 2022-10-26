@@ -1578,7 +1578,6 @@ img {
           column-gap: 8px;
   row-gap: 15px;
   margin-bottom: 40px;
-  width: 326px;
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -1587,7 +1586,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
     margin-bottom: 30px;
   }
 }
@@ -1670,6 +1668,7 @@ img {
 }
 
 .project-card__link {
+  max-width: 450px;
   color: #212121;
 }
 

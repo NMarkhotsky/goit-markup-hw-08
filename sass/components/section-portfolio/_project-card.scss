@@ -35,6 +35,7 @@
 
 .project-card__link {
   @extend %link;
+  max-width: 450px;
 
   color: $main-color;
 }
