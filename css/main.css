@@ -1571,11 +1571,30 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+  width: 326px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__btn {
@@ -1608,9 +1627,21 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .project-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .project-card__item {
@@ -1626,6 +1657,16 @@ img {
 .project-card__item:hover .project-card__overlay, .project-card__item:focus .project-card__overlay {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+@media screen and (min-width: 768px) {
+  .project-card__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card__item {
+    width: 370px;
+  }
 }
 
 .project-card__link {
@@ -1660,6 +1701,11 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-card__box--bottom {
+    padding-bottom: 56px;
+  }
 }
 
 .project-card__title {
