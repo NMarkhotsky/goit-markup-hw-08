@@ -14,6 +14,10 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 420px) {
+    font-size: 15px;
+  }
 }
 
 .social-header__link {

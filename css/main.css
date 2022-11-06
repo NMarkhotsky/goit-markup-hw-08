@@ -700,6 +700,11 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 420px) {
+  .social-header__item {
+    font-size: 15px;
+  }
+}
 
 .social-header__link {
   color: #2196f3;
